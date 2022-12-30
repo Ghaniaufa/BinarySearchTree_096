@@ -50,6 +50,13 @@ namespace Binary_Search_Tree
                     ROOT = tmp;
                 }
                 else if (string.Compare(element, parent.info) <0)
+                {
+                    parent.leftchild = tmp;
+                }
+                else
+                {
+                    parent.rightchild = tmp;
+                }
             }   
         }
     }
