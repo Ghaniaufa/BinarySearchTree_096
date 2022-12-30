@@ -36,7 +36,7 @@ namespace Binary_Search_Tree
         public void insert(string element) /* Insert a node in th ebinary search tree */
         {
             Node tmp, parent = null, currentNode = null;
-            Search(element, ref parent, ref currentNode);
+            search(element, ref parent, ref currentNode);
             if (currentNode != null) /* Check if the node to be inserted already inserted or not */
             {
                 Console.WriteLine("Duplicate words not allowed");
@@ -114,6 +114,18 @@ namespace Binary_Search_Tree
                 postorder(ptr.leftchild);
                 postorder(ptr.rightchild);
                 Console.Write(ptr.info + " ");
+            }
+        }static void Main(string [] args)
+        {
+            BinaryTree x = new BinaryTree();
+            while (true)
+            {
+                Console.WriteLine("\nMenu");
+                Console.WriteLine("1. Implement insert operation");
+                Console.WriteLine("2. Perform inorder traversal");
+                Console.WriteLine("3. Perfrom preorder traversal");
+                Console.WriteLine("4. Perform postorder traversal");
+                Console.WriteLine("5. Exit");
             }
         }
     }
