@@ -29,7 +29,7 @@ namespace Binary_Search_Tree
     class BinaryTree
     {
         public Node ROOT;
-        public Node BinaryTree()
+        public BinaryTree()
         {
             ROOT = null; /* Initializing ROOT to null */
         }
@@ -44,8 +44,8 @@ namespace Binary_Search_Tree
             }
             else /* If the spesiied node is not present */
             {
-                tmp new Node(element, null, null);/* creates a Node*/
-                if (parent == null)/* if the trees is epmty*/
+                tmp = new Node(element, null, null);/* creates a Node*/
+                if (parent == null) /* if the trees is epmty*/
                 {
                     ROOT = tmp;
                 }
@@ -151,6 +151,14 @@ namespace Binary_Search_Tree
                     case '4':
                         {
                             x.postorder(x.ROOT);
+                        }
+                        break;
+                    case '5':
+                        return;
+                        default:
+                        {
+                            Console.WriteLine("Invalid Option");
+                            break;
                         }
                 }
             }
