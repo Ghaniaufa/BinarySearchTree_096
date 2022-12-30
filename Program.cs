@@ -21,4 +21,18 @@ namespace Binary_Search_Tree
             rightchild = r;
         }
     }
+
+
+    /* A node lass consits os three things, the information, reference to the
+     * right child, and reference to the left child */
+
+    class BinaryTree
+    {
+        public Node ROOT;
+        public Node BinaryTree()
+        {
+            ROOT = null; /* Initializing ROOT to null */
+        }
+        
+    }
 }
