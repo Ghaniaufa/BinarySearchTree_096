@@ -143,6 +143,11 @@ namespace Binary_Search_Tree
                             x.inorder(x.ROOT);
                         }
                         break;
+                    case '3':
+                        {
+                            x.preorder(x.ROOT);
+                        }
+                        break;
                 }
             }
         }
