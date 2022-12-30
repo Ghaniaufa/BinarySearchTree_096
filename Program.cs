@@ -138,6 +138,11 @@ namespace Binary_Search_Tree
                             x.insert(word);
                         }
                         break;
+                    case '2':
+                        {
+                            x.inorder(x.ROOT);
+                        }
+                        break;
                 }
             }
         }
